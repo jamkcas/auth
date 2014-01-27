@@ -1,0 +1,16 @@
+<%= form_for @user do |f| %>
+  <%= f.label 'Username:' %>
+  <%= f.text_field :name, placeholder: 'John Doe, e.g.' %>
+
+  <%= f.label 'Email:' %>
+  <%= f.text_field :email, placeholder: 'johndoe@yahoo.com, e.g.' %>
+
+  <%= f.label 'Password:' %>
+  <%= f.password_field :password %> <!-- password field blots out password while typing -->
+
+  <%= f.label 'Confirm Password:' %>
+  <%= f.password_field :password_confirmation %>
+
+  <%= f.submit 'Sign Up' %>
+
+<% end %>
